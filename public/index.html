@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<base href="/">
+
+	<title>Starter Node and Angular</title>
+
+	<!-- CSS -->
+	<!-- <script src="libs/jquery/dist/jquery.min.js"></script> -->
+	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+<!-- 	<script src="libs/bootstrap/dist/js/bootstrap.min.js"></script> -->
+		
+	
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css"> <!-- custom styles -->
+	<!-- <link rel="stylesheet" href="libs/angular-aria/angular-aria.min.css"> -->
+	<!-- <link rel="stylesheet" href="libs/angular-messages/angular-messages.min.css"> -->
+	<link rel="stylesheet" href="libs/angular-material/angular-material.min.css">
+	<!-- JS -->
+	<script src="libs/angular/angular.min.js"></script>
+	<script src="libs/angular-route/angular-route.min.js"></script>
+	<script src="libs/angular-animate/angular-animate.min.js"></script> 
+ 	<script src="libs/angular-aria/angular-aria.min.js"></script>
+    <script src="libs/angular-messages/angular-messages.min.js"></script> 
+    
+	<script src="libs/angular-material/angular-material.min.js"></script> 
+	
+	<!-- Angular Material Library -->
+  
+	<!-- ANGULAR CUSTOM -->
+	<script src="js/controllers/MainCtrl.js"></script>
+	<script src="js/controllers/NerdCtrl.js"></script>
+	<script src="js/services/NerdService.js"></script>
+	<script src="js/controllers/GeekCtrl.js"></script>
+	<script src="js/services/GeekService.js"></script>
+	<script src="js/controllers/SchoolCtrl.js"></script>
+	<script src="js/services/SchoolService.js"></script>
+	<script src="js/controllers/SchoolDetailsCtrl.js"></script>
+	<script src="js/appRoutes.js"></script>
+	<script src="js/app.js"></script>
+</head>
+
+<body ng-app="sampleApp" ng-controller="NerdController">
+
+	<nav
+		class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+		<button class="navbar-toggler navbar-toggler-right" type="button"
+			data-toggle="collapse" data-target="#navbarsExampleDefault"
+			aria-controls="navbarsExampleDefault" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<a class="navbar-brand" href="/">WIS</a>
+
+		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+				<a class="nav-link" href="/home">
+					Home<span class="sr-only">(current)</span>
+				</a></li>
+				<li class="nav-item"><a class="nav-link" href="/worksheet">Worksheet</a></li>
+				<li class="nav-item"><a class="nav-link" href="/addschool">Add School</a></li>
+				
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<!--  <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<div
+							class="logged-out-bar sg-small-18 sg-columns sg-small-offset-1 sg-small-pull-1">
+							<div class="sg-btn-duo action-links">
+								<a href="#myModal" class="btn btn-md btn-primary"
+									data-toggle="modal"> Login/Signup </a>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+			</form>
+		</div>
+	</nav>
+
+	
+	
+	<div class="container">
+		<div class="col-md-12">
+			  	<div ng-view></div>
+		</div>
+	</div>
+
+	
+		<hr>
+
+		<footer>
+			<p>&copy; Company 2017</p>
+		</footer>
+	</div>
+	<!-- /container -->
+	<!-- Modal -->
+	<div id="myModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Login</h4>
+				</div>
+				<div class="modal-body">
+					<a href="/login" class="btn btn-default"><span
+						class="fa fa-user"></span>Login</a> <a href="/signup"
+						class="btn btn-default"><span class="fa fa-user"></span>Signup</a>
+					<a href="/auth/facebook" class="btn btn-primary"><span
+						class="fa fa-facebook"></span> Facebook</a> <a href="/auth/google"
+						class="btn btn-danger"><span class="fa fa-google-plus"></span>
+						Google</a>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- Signup -->
+	<div id="signup" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Login</h4>
+				</div>
+				<div class="modal-body">
+					<div class="container" style="max-width: 600px; margin: 60px auto;">
+						<form role="form">
+							<div class="form-group">
+								<label for="name">First name</label> <input type="name"
+									class="form-control" id="fname" placeholder="Enter name">
+							</div>
+							<div class="form-group">
+								<label for="address">Second name</label> <input type="address"
+									class="form-control" id="sname" placeholder="Enter surname">
+							</div>
+							<div class="form-group">
+								<label for="email">Email</label> <input type="email"
+									class="form-control" id="email" placeholder="Enter email">
+							</div>
+							<div class="form-group">
+								<label for="pwd">Password</label> <input type="password"
+									class="form-control" id="pwd" placeholder="Enter password">
+							</div>
+							<button type="submit" class="btn btn-default">Register</button>
+						</form>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+		integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+		integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+		integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+		crossorigin="anonymous"></script>
+</body>
+</html>

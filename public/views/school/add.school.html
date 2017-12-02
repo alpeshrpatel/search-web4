@@ -1,0 +1,162 @@
+<div class="panel panel-default jumbotron text-left">
+  <div class="panel-heading">
+   <!--  <h3 class="panel-title">Add School</h3> -->
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-12">
+      <form ng-submit="addSchool()" class="form-horizontal">
+	   	<div class="form-group row">
+			<label for="first_name" class="col-sm-2 col-form-label">Name</label>
+			<div class="col-sm-10 ">
+				<input type="text" class="form-control" id="name" 
+						name="name" ng-model="school.name" placeholder="Name" ng-init="school.name='Padra High School'"> 
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="first_name" class="col-sm-2 col-form-label">Details</label>
+		    <div class="col-sm-10 ">
+		    	<textarea class="form-control" id="Details" ng-model="school.details" 
+		    			rows="3" ng-init="school.details='Add school Details'">
+		    	</textarea>
+		    </div>
+		</div>
+		<div class="form-group row">
+			<label for="first_name" class="col-sm-2 col-form-label">Address</label>
+			<div class="col-sm-10 ">
+				<input type="text" class="form-control" id="address" 
+					name="address" ng-model="school.address" placeholder="Address" ng-init="school.address='Station Road'"> 
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="first_name" class="col-sm-2 col-form-label">City</label>
+			<div class="col-sm-2 ">
+				<input type="text" class="form-control" id="city" 
+					name="city" ng-model="school.city" placeholder="City" value="City" ng-init="school.city='Padra'"> 
+			</div>
+			<label for="first_name" class="col-sm-1 col-form-label">Zipcode</label>
+			<div class="col-sm-2 ">
+				<input type="text" class="form-control" id="zipcode" 
+					name="zipcode" ng-model="school.zipcode" placeholder="Zipcode" value="Zipcode" ng-init="school.zipcode='391440'"> 
+			</div>
+			<label for="first_name" class="col-sm-1 col-form-label">Country</label>
+			<div class="col-sm-2 ">
+				<input type="text" class="form-control" id="country" 
+					name="zipcode" ng-model="school.country" placeholder="Country" value="Country" ng-init="school.country='India'"> 
+			</div>
+			<!-- <label for="first_name" class="col-sm-1 col-form-label">State</label>
+			<div class="col-sm-3 ">
+				<input type="text" class="form-control" id="state" 
+					name="state" ng-model="school.state" placeholder="State" value="State" ng-init="school.state='MH'"> 
+			</div> -->
+		</div>
+		<div class="form-group row">
+			<label for="first_name" class="col-sm-2 col-form-label">Tehsil</label>
+			<div class="col-sm-2 ">
+				<input type="text" class="form-control" id="tehsil" 
+					name="tehsil" ng-model="school.tehsil" placeholder="Tehsil" value="Tehsil" ng-init="school.tehsil='Padra'"> 
+			</div>
+			<label for="first_name" class="col-sm-1 col-form-label">District</label>
+			<div class="col-sm-3 ">
+				<input type="text" class="form-control" id="district" 
+					name="district" ng-model="school.district" placeholder="district" value="district" ng-init="school.district='Vadodara'"> 
+			</div>
+			<label for="first_name" class="col-sm-1 col-form-label">State</label>
+			<div class="col-sm-3 ">
+				<input type="text" class="form-control" id="state" 
+					name="state" ng-model="school.state" placeholder="State" value="State" ng-init="school.state='Gujarat'"> 
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="first_name" class="col-sm-2 col-form-label">Phone</label>
+			<div class="col-sm-4 ">
+				<input type="text" class="form-control" id="phone" 
+					name="phone" ng-model="school.phone" placeholder="+91-9999999999" ng-init="school.phone='+91-9999999999'"> 
+			</div>
+			<label for="first_name" class="col-sm-2 col-form-label">Fax</label>
+			<div class="col-sm-4 pull-left">
+				<input type="text" class="form-control" id="fax" 
+					name="phone" ng-model="school.fax" placeholder="+91-9999999999" ng-init="school.fax='+91-9999999999'"> 
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="first_name" class="col-sm-2 col-form-label">Website</label>
+			<div class="col-sm-4 ">
+				<input type="text" class="form-control" id="website" 
+					name="website" ng-model="school.website" placeholder="example.com" value="Website" ng-init="school.website='ppshroff.com'"> 
+			</div>
+			<label for="first_name" class="col-sm-2 col-form-label ">Email</label>
+			<div class="col-sm-4 pull-left">
+				<input type="text" class="form-control" id="email" 
+					name="email" ng-model="school.email" placeholder="abc@xyz.com" value="Email" ng-init="school.email='abc@xyz.com'"> 
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="first_name" class="col-sm-2 col-form-label">Male Teacher</label>
+			<div class="col-sm-4 ">
+				<input type="text" class="form-control" id="website" 
+					name="website" ng-model="school.maleteacher" placeholder="10" value="10" ng-init="school.maleteacher='10'"> 
+			</div>
+			<label for="first_name" class="col-sm-2 col-form-label ">Female Teacher</label>
+			<div class="col-sm-4 pull-left">
+				<input type="text" class="form-control" id="website" 
+					name="website" ng-model="school.femaleteacher" placeholder="10" value="10" ng-init="school.femaleteacher='10'"> 
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="first_name" class="col-sm-2 col-form-label">Boy's Count</label>
+			<div class="col-sm-4 ">
+				<input type="text" class="form-control" id="boys" 
+					name="website" ng-model="school.boys" placeholder="100" value="100" ng-init="school.boys='100'"> 
+			</div>
+			<label for="first_name" class="col-sm-2 col-form-label ">Girls's Count</label>
+			<div class="col-sm-4 pull-left">
+				<input type="text" class="form-control" id="girls" 
+					name="website" ng-model="school.girls" placeholder="200" value="Girls" ng-init="school.girls='100'"> 
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="first_name" class="col-sm-2 col-form-label">Type Of School</label>
+			<div class="col-sm-2">
+				<md-radio-group ng-model="data.group1">
+					<md-radio-button value="public" class="md-primary">Public</md-radio-button>
+					<md-radio-button value="private"> Private </md-radio-button>
+					<md-radio-button value="international"> International </md-radio-button>
+		    	</md-radio-group>
+			</div>
+			<label for="first_name" class="col-sm-1 col-form-label">Academic </label>
+			<div class="col-sm-4 ">
+				 <md-checkbox ng-model="data.prekg" aria-label="prekg">
+		            Pre KG 
+		          </md-checkbox>
+		          <md-checkbox ng-model="data.kg" aria-label="kindergarden">
+		            Kinder Garden 
+		          </md-checkbox>
+		          <md-checkbox ng-model="data.primary" aria-label="primary">
+		            Primary
+		          </md-checkbox>
+		          <md-checkbox ng-model="data.secondary" aria-label="secondary">
+		            Secondory
+		          </md-checkbox>
+		          <md-checkbox ng-model="data.high" aria-label="high">
+		            High School 
+		          </md-checkbox>
+		    </div>
+		</div>    
+		<div class="form-group row">
+			<div class="col-sm-12 pull-right ">
+				{{message}}
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="first_name" class="col-sm-10 col-form-label"></label>
+			<div class="col-sm-2">
+				<button type="submit" class="btn btn-default">Submit</button>		
+			</div>
+		</div>
+		
+      </form>
+    </div>
+    </div>
+  </div>
+</div>
