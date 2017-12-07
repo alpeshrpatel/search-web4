@@ -14,6 +14,7 @@
 	
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css"> <!-- custom styles -->
+	<link rel="stylesheet" href="css/social.css"> <!-- custom styles -->
 	<!-- <link rel="stylesheet" href="libs/angular-aria/angular-aria.min.css"> -->
 	<!-- <link rel="stylesheet" href="libs/angular-messages/angular-messages.min.css"> -->
 	<link rel="stylesheet" href="libs/angular-material/angular-material.min.css">
@@ -41,8 +42,36 @@
 	<script src="js/app.js"></script>
 </head>
 
-<body ng-app="sampleApp" ng-controller="NerdController">
+<body ng-app="sampleApp" ng-controller="MainController">
+	<div class="sticky-container">
+    <ul class="sticky">
+        <li>
+        	<!-- <a href="#" class="fa fa-facebook"></a> -->
+             <img src="img/social/facebook-circle.png" width="32" height="32">
+            <p><a href="https://www.facebook.com/codexworld" >Like Us on<br>Facebook</a><
 
+        <li>
+            <img src="img/social/twitter-circle.png" width="32" height="32">
+            <p><a href="https://twitter.com/codexworldblog" target="_blank">Follow Us on<br>Twitter</a></p>
+        </li>
+        <li>
+            <img src="img/social/gplus-circle.png" width="32" height="32">
+            <p><a href="https://plus.google.com/codexworld" target="_blank">Follow Us on<br>Google+</a></p>
+        </li>
+        <li>
+            <img src="img/social/linkedin-circle.png" width="32" height="32">
+            <p><a href="https://www.linkedin.com/company/codexworld" target="_blank">Follow Us on<br>LinkedIn</a></p>
+        </li>
+        <li>
+            <img src="img/social/youtube-circle.png" width="32" height="32">
+            <p><a href="http://www.youtube.com/codexworld" target="_blank">Subscribe on<br>YouYube</a></p>
+        </li>
+        <li>
+            <img src="img/social/pin-circle.png" width="32" height="32">
+            <p><a href="https://www.pinterest.com/codexworld" target="_blank">Follow Us on<br>Pinterest</a></p>
+        </li>
+    </ul>
+</div>
 	<nav
 		class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
 		<button class="navbar-toggler navbar-toggler-right" type="button"
@@ -94,9 +123,42 @@
 	
 		<hr>
 
-		<footer>
-			<p>&copy; Company 2017</p>
-		</footer>
+<footer id="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    &copy; 2017 WIS is not a real thing. If it is, this site was not meant to be a mockery of it. <br>
+                    Coded by <a href="http://whereisschool.com/">iGroup</a>
+                </div>
+                <div class="col-md-2">
+                    <h6>Our product</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Solutions</a></li>
+                       <!--  <li><a href="">Plans</a></li> -->
+                       <!--  <li><a href="">Sign in</a></li> -->
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6>Our team</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="">About</a></li>
+                        <li><a href="">Highlights</a></li>
+                       <!--  <li><a href="">Investors</a></li> -->
+                        <li><a href="">Partners</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6>Other things</h6>
+                    <ul class="list-unstyled">
+                        <!-- <li><a href="">Jobs</a></li> -->
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 	</div>
 	<!-- /container -->
 	<!-- Modal -->

@@ -4,6 +4,7 @@ angular.module('MainCtrl', []).controller('MainController', function($scope,$htt
 	$scope.isaddschool=false;
 	$scope.issearchdata = false;
 	$scope.schoollist = null;
+	console.log("issearchdata : " + $scope.issearchdata );
 	
 	
 	$scope.onClickGo = function(){
@@ -17,6 +18,7 @@ angular.module('MainCtrl', []).controller('MainController', function($scope,$htt
 				$scope.schoollist = response.data;
 				$scope.isaddschool=true;
 				$scope.issearchdata = true;
+				console.log("issearchdata : " + $scope.issearchdata );
 				
 				//console.log("Records :" + JSON.stringify($scope.schoollist));
 			  }, function errorCallback(response) {
@@ -29,6 +31,7 @@ angular.module('MainCtrl', []).controller('MainController', function($scope,$htt
 		console.log('onClickHome');
 		$scope.isaddschool=false;
 		$scope.issearchdata = false;
+		console.log("issearchdata : " + issearchdata );
 	}
 	
 });
