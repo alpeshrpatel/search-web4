@@ -43,68 +43,42 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="card">
-					<div class="card-header"><b>{{school.name}}</b>
+					<div class="card-header">
+						<b>{{school.name}}</b>
 						<div>
-							<span class="float-right m-2"><a href="/editschool/{{school._id}}"> Edit</a></span>
-						</div>	
+							<span class="float-right m-2"><a
+								href="/editschool/{{school._id}}"> Edit</a></span>
+						</div>
 					</div>
 					<div class="card-block">
 						{{school.address}} , {{school.city}} , {{school.zipcode}}</br>
-						{{school.state}} , {{school.country}}  
-						
+						{{school.state}} , {{school.country}}
+
 					</div>
-					<div class="card-footer pull-right">
-					   following
-					</div>
+					<div class="card-footer pull-right">following</div>
 				</div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-12">&nbsp;
+			<div class="col-md-12">&nbsp;</div>
+		</div>
+	</div>
+
+</div>
+<div ng-show="!issearchdata">
+	<div class="container">
+		<div id="headertable" ng-repeat="headerrow in headertable">
+			<!-- Example row of columns -->
+			<div class="row">
+				<div class="col-md-4"  ng-repeat="header in headerrow" ng-init="rowIndex=$index">
+					<h2>{{rowIndex}}-{{header.header}}</h2>
+					<p>{{header.details}}</p>
+					<p>
+						<a class="btn btn-secondary" href="#" role="button">View
+							details &raquo;</a>
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
-	
 </div>
-
-
-
-<div class="container" ng-show="!issearchdata">
-	<!-- Example row of columns -->
-	<div class="row">
-		<div class="col-md-4">
-			<h2>Heading</h2>
-			<p>Donec id elit non mi porta gravida at eget metus. Fusce
-				dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-				ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
-				magna mollis euismod. Donec sed odio dui.</p>
-			<p>
-				<a class="btn btn-secondary" href="#" role="button">View details
-					&raquo;</a>
-			</p>
-		</div>
-		<div class="col-md-4">
-			<h2>Heading</h2>
-			<p>Donec id elit non mi porta gravida at eget metus. Fusce
-				dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-				ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
-				magna mollis euismod. Donec sed odio dui.</p>
-			<p>
-				<a class="btn btn-secondary" href="#" role="button">View details
-					&raquo;</a>
-			</p>
-		</div>
-		<div class="col-md-4">
-			<h2>Heading</h2>
-			<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
-				egestas eget quam. Vestibulum id ligula porta felis euismod semper.
-				Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-				nibh, ut fermentum massa justo sit amet risus.</p>
-			<p>
-				<a class="btn btn-secondary" href="#" role="button">View details
-					&raquo;</a>
-			</p>
-		</div>
-	</div>
-</div>
-
