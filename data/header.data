@@ -1,0 +1,29 @@
+
+
+You need to start API module first then use endpoint
+Insert record one by one using header post service
+Endpoint : http://localhost:4000/api/headers
+
+
+[
+    {
+        "header": "Parenting",
+        "details": "Parenting or child rearing is the process of promoting and supporting the physical, emotional, social, and intellectual development of a child from infancy to adulthood",
+    },
+    {
+        "header": "Raising Kids",
+        "details": "Raising children is a creative endeavor, an art rather than a science.",
+    },
+    {
+        "header": "Academic",
+        "details": "An arts education helps build academic skills and increase academic performance, while also providing alternative opportunities to reward the skills of children who learn differently.",
+    },
+    {
+        "header": "Parenting",
+        "details": "Parenting or child rearing is the process of promoting and supporting the physical, emotional, social, and intellectual development of a child from infancy to adulthood",
+    },
+    {
+        "header": "Academic",
+        "details": "An arts education helps build academic skills and increase academic performance, while also providing alternative opportunities to reward the skills of children who learn differently.",
+    }
+]
