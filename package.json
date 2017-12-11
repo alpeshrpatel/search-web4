@@ -2,6 +2,7 @@
   "name": "search-web",
   "main": "server.js",
   "dependencies": {
+    "aws-sdk": "^2.167.0",
     "body-parser": "~1.4.2",
     "cors": "^2.8.4",
     "express": "~4.5.1",
