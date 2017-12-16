@@ -3,6 +3,7 @@ angular.module('SchoolCtrl', []).controller('SchoolController', function($scope,
 
 	$scope.tagline = 'Nothing beats a pocket protector!';
 	$scope.isaddschool=true;
+	
 	$scope.addSchool = function(){
 		console.log('JSON :' + JSON.stringify($scope.school));
 		$http({
@@ -18,6 +19,8 @@ angular.module('SchoolCtrl', []).controller('SchoolController', function($scope,
 				  console.log("Please check erorr log or console");
 			  });
 	}
+	
+	
 	
 	
 

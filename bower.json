@@ -5,6 +5,7 @@
 		"bootstrap": "4.0.0-alpha.6",
 		"angular": "latest",
 		"angular-route": "latest",
-		"angular-material":"latest"
+		"angular-material":"latest",
+		"angular-ui-router":"latest"
 	}
 }

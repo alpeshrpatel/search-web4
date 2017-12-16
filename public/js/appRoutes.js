@@ -10,22 +10,12 @@ angular.module('appRoutes', []).config([ '$routeProvider', '$locationProvider', 
 			controller : 'MainController'
 		})
 
-		.when('/nerds', {
-			templateUrl : 'views/nerd.html',
-			controller : 'NerdController'
-		})
-
-		.when('/geeks', {
-			templateUrl : 'views/geek.html',
-			controller : 'GeekController'
-		})
-
 		.when('/addschool', {
 			templateUrl: 'views/school/add.school.html',
 			controller: 'SchoolController'
 		})
 		.when('/editschool/:id', {
-			templateUrl: 'views/school/add.school.html',
+			templateUrl: 'views/school/edit.school.html',
 			controller: 'SchoolDetailsCtrl'
 		})
 	;

@@ -43,21 +43,35 @@
 				<div class="card">
 					<div class="card-header">
 						<b>{{school.name}}</b>
-						
-							<span class="float-right float-up"><a
-								href="/editschool/{{school._id}}"> Edit</a></span>
-						
+							<span class="float-right float-up">
+								<a href="/editschool/{{school._id}}"> 
+									Edit
+								</a> &nbsp;&nbsp;
+								<a href="/follow/{{school._id}}">
+									follow
+								</a>
+							</span>
 					</div>
 					<div class="card-block">
-						{{school.address}} , {{school.city}} , {{school.zipcode}}</br>
-						{{school.state}} , {{school.country}}
-					</div>
-					<div class="card-footer">
-						<span class="float-right float-up">
-							<a href="/follow/{{school._id}}">
-								follow
-							</a>
-						</span>	
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-1 col-sm-1">
+									<img alt="" height="100%" width ="100%" src="../img/school.png" class="rounded img-responsive img-thumbnail">
+								</div>
+								<div class="col-xs-11">
+									<div class="row">
+										<div class="col-sm-12">
+											{{school.details}}{{school.address}} , {{school.city}} , {{school.zipcode}}</br>
+											{{school.state}} , {{school.country}}
+										</div>
+									</div>
+									
+									
+									<star-rating-comp rating="'3.0'">AAA</star-rating-comp>
+								</div>
+								
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
