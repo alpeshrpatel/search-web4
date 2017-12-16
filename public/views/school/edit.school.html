@@ -118,30 +118,38 @@
 		<div class="form-group row">
 			<label for="first_name" class="col-sm-2 col-form-label">Type Of School</label>
 			<div class="col-sm-2">
-				<md-radio-group ng-model="data.group1">
+				<md-radio-group ng-model="school.type">
 					<md-radio-button value="public" class="md-primary">Public</md-radio-button>
-					<md-radio-button value="private"> Private </md-radio-button>
-					<md-radio-button value="international"> International </md-radio-button>
+					<md-radio-button value="private" class="md-primary"> Private </md-radio-button>
+					<md-radio-button value="international" class="md-primary"> International </md-radio-button>
 		    	</md-radio-group>
 			</div>
 			<label for="first_name" class="col-sm-1 col-form-label">Academic </label>
 			<div class="col-sm-4 ">
-				 <md-checkbox ng-model="data.prekg" aria-label="prekg">
+				<md-checkbox ng-model="school.daycare" aria-label="daycare">
+		            Day Care 
+		          </md-checkbox>
+				 <md-checkbox ng-model="school.prekg" aria-label="prekg">
 		            Pre KG 
 		          </md-checkbox>
-		          <md-checkbox ng-model="data.kg" aria-label="kindergarden">
+		          <md-checkbox ng-model="school.kg" aria-label="kindergarden">
 		            Kinder Garden 
 		          </md-checkbox>
-		          <md-checkbox ng-model="data.primary" aria-label="primary">
+		          <md-checkbox ng-model="school.primary" aria-label="primary">
 		            Primary
 		          </md-checkbox>
-		          <md-checkbox ng-model="data.secondary" aria-label="secondary">
+		          <md-checkbox ng-model="school.secondary" aria-label="secondary">
 		            Secondory
 		          </md-checkbox>
-		          <md-checkbox ng-model="data.high" aria-label="high">
+		          <md-checkbox ng-model="school.high" aria-label="high">
 		            High School 
 		          </md-checkbox>
 		    </div>
+		</div>    
+		<div class="form-group row">
+			<div class="col-sm-12 pull-right ">
+				{{message}}
+			</div>
 		</div>    
 		<div class="form-group row">
 			<div class="col-sm-12 pull-right ">

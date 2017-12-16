@@ -21,6 +21,7 @@ angular.module('SchoolDetailsCtrl', []).controller('SchoolDetailsCtrl', function
 	$scope.updateSchool = function(){
 		//console.log('JSON :' + JSON.stringify($scope.school));
 		var updateschoolEndpoint='http://localhost:4000/api/schools/' +$scope.school._id
+		console.log()
 		$http({
 			  method: 'PUT',
 			  url: updateschoolEndpoint,
@@ -28,7 +29,7 @@ angular.module('SchoolDetailsCtrl', []).controller('SchoolDetailsCtrl', function
 			}).then(function successCallback(response) {
 				$scope.response=response;
 				$scope.message = "Data updated successfully";
-				console.log("Record is Created successfully");
+				console.log("Data updated successfully");
 			  }, function errorCallback(response) {
 				  $scope.response=response;
 				  console.log("Please check erorr log or console");
