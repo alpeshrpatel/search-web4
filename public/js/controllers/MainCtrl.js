@@ -30,15 +30,15 @@ angular.module('MainCtrl', []).controller('MainController', function($scope,$htt
 			  console.log("Please check erorr log or console : Header service error");
 		  });
 	
-	$http({
-		  method: 'GET',
-		  url: 'http://localhost:4000/api/quotes/random'
-		}).then(function successCallback(response) {
-			$scope.quote = response.data;			
-		  }, function errorCallback(response) {
-			  $scope.response=response;
-			  console.log("Please check erorr log or console : Header service error");
-		  });
+//	$http({
+//		  method: 'GET',
+//		  url: 'http://localhost:4000/api/quotes/random'
+//		}).then(function successCallback(response) {
+//			$scope.quote = response.data;			
+//		  }, function errorCallback(response) {
+//			  $scope.response=response;
+//			  console.log("Please check erorr log or console : Header service error");
+//		  });
 	
 	$scope.onClickGo = function(){
 		console.log('On Click Go');

@@ -7,6 +7,18 @@
     "cors": "^2.8.4",
     "express": "~4.5.1",
     "method-override": "~2.0.2",
-    "mongoose": "~4.4"
+    "mongoose": "~4.4",
+    "bcryptjs": "*",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "mongodb": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*"
   }
 }
