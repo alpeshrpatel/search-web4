@@ -46,7 +46,7 @@ angular.module('MainCtrl', []).controller('MainController', function($scope,$htt
 //		console.log($scope.cityname);
 		$http({
 			  method: 'GET',
-			  url: 'http://localhost:4000/api/schools/'
+			  url: 'http://104.197.215.38:4000/api/schools/'
 			}).then(function successCallback(response) {
 				$scope.schoollist = response.data;
 				$scope.isaddschool=true;
@@ -70,7 +70,7 @@ angular.module('MainCtrl', []).controller('MainController', function($scope,$htt
 	$scope.loadHeader = function(){
 		$http({
 			  method: 'GET',
-			  url: 'http://localhost:4000/api/headers'
+			  url: 'http://104.197.215.38:4000/api/headers'
 			}).then(function successCallback(response) {
 				$scope.headerlist = response.data;
 				console.log(JSON.stringify($scope.headerlist));
