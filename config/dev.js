@@ -13,5 +13,9 @@ module.exports = {
 	    "user": "",
 	    "password": "",
 	    "port": "27017"
+	},
+	endpoint :{
+		"apiurl":"http://localhost:4000/api",
+		"token" :"",		
 	}
 };
