@@ -9,7 +9,7 @@ angular.module('MainCtrl', []).controller('MainController', function($scope,$htt
 	//$scope.loadHeader();
 	$http({
 		  method: 'GET',
-		  url: 'http://localhost:4000/api/headers'
+		  url: 'http://104.197.215.38:4000/api/headers'
 		}).then(function successCallback(response) {
 			$scope.headerlist = response.data;
 			var headertable = [];
