@@ -19,6 +19,8 @@
     "mongoose": "*",
     "passport": "*",
     "passport-http": "*",
-    "passport-local": "*"
+    "passport-local": "*",
+    "express-jwt": "^3.0.1",
+    "jsonwebtoken": "^5.0.2"
   }
 }
