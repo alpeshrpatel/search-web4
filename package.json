@@ -1,6 +1,6 @@
 {
   "name": "search-web",
-  "main": "server.js",
+  "main": "webserver.js",
   "dependencies": {
     "aws-sdk": "^2.167.0",
     "body-parser": "~1.4.2",
