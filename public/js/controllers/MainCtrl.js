@@ -9,7 +9,7 @@ angular.module('MainCtrl', []).controller('MainController', function($scope,$htt
 	//$scope.loadHeader();
 	$http({
 		  method: 'GET',
-		  url: 'http://35.193.240.147:4000/headers'
+		  url: 'http://35.224.77.89:4000/headers'
 		}).then(function successCallback(response) {
 			$scope.headerlist = response.data;
 			var headertable = [];
@@ -46,7 +46,7 @@ angular.module('MainCtrl', []).controller('MainController', function($scope,$htt
 //		console.log($scope.cityname);
 		$http({
 			  method: 'GET',
-			  url: 'http://35.193.240.147:4000/schools'
+			  url: 'http://35.224.77.89:4000/schools'
 			}).then(function successCallback(response) {
 				$scope.schoollist = response.data;
 				$scope.isaddschool=true;
@@ -70,7 +70,7 @@ angular.module('MainCtrl', []).controller('MainController', function($scope,$htt
 	$scope.loadHeader = function(){
 		$http({
 			  method: 'GET',
-			  url: 'http://35.193.240.147:4000/api/headers'
+			  url: 'http://35.224.77.89:4000/api/headers'
 			}).then(function successCallback(response) {
 				$scope.headerlist = response.data;
 				console.log(JSON.stringify($scope.headerlist));

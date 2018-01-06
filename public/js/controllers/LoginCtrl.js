@@ -2,7 +2,7 @@
 angular.module('LoginCtrl', []).controller('LoginCtrl', function($scope,$http,$routeParams) {
 	console.log($scope.username);
 	console.log($scope.password);
-	var getUserEndpoint='http://35.193.240.147:4000/api/user/' +$routeParams.username
+	var getUserEndpoint='http://35.224.77.89:4000/api/user/' +$routeParams.username
 	console.log(getschoolEndpoint);
 	$http({
 		  method: 'GET',
@@ -19,7 +19,7 @@ angular.module('LoginCtrl', []).controller('LoginCtrl', function($scope,$http,$r
 	
 	$scope.updateSchool = function(){
 		//console.log('JSON :' + JSON.stringify($scope.school));
-		var updateschoolEndpoint='http://35.193.240.147:4000/api/schools/' +$scope.school._id
+		var updateschoolEndpoint='http://35.224.77.89:4000/api/schools/' +$scope.school._id
 		console.log()
 		$http({
 			  method: 'PUT',
