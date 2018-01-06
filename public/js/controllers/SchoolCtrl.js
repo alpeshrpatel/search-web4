@@ -9,7 +9,7 @@ angular.module('SchoolCtrl', []).controller('SchoolController', function($scope,
 		console.log('JSON :' + JSON.stringify($scope.school));
 		$http({
 			  method: 'POST',
-			  url: 'http://35.224.77.89:4000/schools/',
+			  url: 'http://localhost:4000/schools/',
 			  data: $scope.school
 			}).then(function successCallback(response) {
 				$scope.response=response;
