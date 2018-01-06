@@ -3,7 +3,7 @@ angular.module('SchoolDetailsCtrl', []).controller('SchoolDetailsCtrl', function
 	
 	$scope.tagline = 'Nothing beats a pocket protector!';
 	console.log($routeParams.id);
-	var getschoolEndpoint='http://localhost:4000/api/schools/id/' +$routeParams.id
+	var getschoolEndpoint='http://35.224.77.89:4000/api/schools/id/' +$routeParams.id
 	console.log(getschoolEndpoint);
 	$http({
 		  method: 'GET',
@@ -20,7 +20,7 @@ angular.module('SchoolDetailsCtrl', []).controller('SchoolDetailsCtrl', function
 	
 	$scope.updateSchool = function(){
 		//console.log('JSON :' + JSON.stringify($scope.school));
-		var updateschoolEndpoint='http://localhost:4000/api/schools/' +$scope.school._id
+		var updateschoolEndpoint='http://35.224.77.89:4000/api/schools/' +$scope.school._id
 		console.log()
 		$http({
 			  method: 'PUT',

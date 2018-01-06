@@ -15,7 +15,7 @@ module.exports = {
 	    "port": ""
 	},
 	endpoint :{
-		"apiurl":"http://localhost:4000/api",
+		"apiurl":"http://35.224.77.89:4000/api",
 		"token" :"",		
 	},
     facebook:{
