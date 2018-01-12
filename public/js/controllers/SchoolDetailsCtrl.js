@@ -21,7 +21,7 @@ angular.module('SchoolDetailsCtrl', []).controller('SchoolDetailsCtrl', function
 	$scope.updateSchool = function(){
 		//console.log('JSON :' + JSON.stringify($scope.school));
 		var updateschoolEndpoint='http://35.224.77.89:4000/api/schools/' +$scope.school._id
-		console.log()
+		//console.log()
 		$http({
 			  method: 'PUT',
 			  url: updateschoolEndpoint,
