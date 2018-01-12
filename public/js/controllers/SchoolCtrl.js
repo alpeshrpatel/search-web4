@@ -5,7 +5,7 @@ angular.module('SchoolCtrl', []).controller('SchoolController', function($scope,
 	$scope.isaddschool=true;
 	
 	$scope.addSchool = function(){
-		console.log("API endpoint :" + config.endpoint.apiurl);
+//		console.log("API endpoint :" + config.endpoint.apiurl);
 		console.log('JSON :' + JSON.stringify($scope.school));
 		$http({
 			  method: 'POST',
