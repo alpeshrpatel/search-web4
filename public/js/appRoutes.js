@@ -18,6 +18,12 @@ angular.module('appRoutes', []).config([ '$routeProvider', '$locationProvider', 
 			templateUrl: 'views/school/edit.school.html',
 			controller: 'SchoolDetailsCtrl'
 		})
+        .when('/signin', {
+            templateUrl: 'views/user/signin.html',
+        })
+        .when('/signup', {
+            templateUrl: 'views/user/signup.html',
+        })
 	;
 
 	$locationProvider.html5Mode(true);
