@@ -44,3 +44,8 @@ SCHOOL
 
 
 Using Angular-Material --> We should include angular aria and angualar animate dependecy
+
+
+Reference Matetrial  :
+
+https://scotch.io/tutorials/properly-set-environment-variables-for-angular-apps-with-gulp-ng-config#why-you-should-use-environment-variables
